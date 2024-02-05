@@ -1,5 +1,7 @@
 <?php
 
+include __DIR__ . 'models/products.php';
+
 class games extends products{
     
     private $category;
@@ -18,7 +20,7 @@ class games extends products{
 
 
 
-    public function getCategory() {
+    public function get() {
 
         return $this -> category;
     }

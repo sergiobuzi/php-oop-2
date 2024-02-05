@@ -14,3 +14,8 @@
     $prod3 = new kennels("cuccia per cani", "cani", "cucciona per cuccioloni", "123$", "20x20");
     $prod4 = new food ("crocchette gattone", "gatto", "crocchine", "100$", "15kg");
     $prod5 = new games ("pallona", "gatti", "pallin palletta", "190$", "per dentoni");
+
+
+    $array_prod = [$prod1,$prod2,$prod3,$prod4,$prod5];
+
+    ?>

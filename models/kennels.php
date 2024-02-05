@@ -1,5 +1,7 @@
 <?php
 
+include __DIR__ . 'models/products.php';
+
 class kennels extends products{
     
     private $dimension;
@@ -18,7 +20,7 @@ class kennels extends products{
 
 
 
-    public function getDimension() {
+    public function get() {
 
         return $this -> dimension;
     }

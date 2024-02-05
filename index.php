@@ -10,15 +10,27 @@
 <body>
     <?php include __DIR__ . '/models/db.php'; ?>
 
-    <div class="container">
+    <div class="wrap">
+        <?php foreach ($array_prod as $product) { ?>
 
-        <div class="row">
+            <div class="card" style="width: 18rem;">
 
-            <div class="card">
-                
+                <div class="card-body">
+
+                    <h3 class="card-title"><?php echo $product->getTitle(); ?> </h3>
+                    <h5 class="card-text"> <?php echo $product->getType();?> </h5>
+                    <p class="card-text"> <?php echo $product->getDescription();?> </p>
+                    <h3 class="card-text"><?php echo $product->getPrice();?></h3>
+                    <h4 class="card-text"><?php echo $product->get();?></h4>
+
+                </div>
+
             </div>
-
-        </div>
+            
+        <?php } ?>
+        
+    </div>
+    
 
     </div>
 </body>

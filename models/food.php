@@ -17,7 +17,7 @@ class food extends products{
     }
 
 
-    public function getWeight() {
+    public function get() {
 
         return $this -> weight;
     }

@@ -63,5 +63,16 @@
             }
 
 
+
+
+
+
+            // funzione generica
+            public function get() {
+
+                return 'NULL';
+            }
+
+
         }
 ?>
