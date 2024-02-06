@@ -4,17 +4,14 @@ include __DIR__ . 'models/products.php';
 
 class games extends products{
     
-    private $category;
+    private $genre;
 
 
-    public function __construct($title, $type, $description, $price, $category){
-
-        $this -> setTitle($title);
-        $this -> setType($type);
-        $this -> setDescription($description);
-        $this -> setPrice($price);
-        $this -> setCategory($category);
-    }
+   public function __construct($title, $type, $description, $price, $category, $genre)
+   {
+        parent:: __construct($title, $type, $description, $price, $category);
+        $this -> setGenre($genre);
+   }
 
 
 
@@ -22,10 +19,10 @@ class games extends products{
 
     public function get() {
 
-        return $this -> category;
+        return $this -> genre;
     }
-    public function setCategory($category) {
+    public function setGenre($genre) {
 
-        $this -> category = $category;
+        $this -> genre = $genre;
     }
 }

@@ -22,6 +22,7 @@
                     <p class="card-text"> <?php echo $product->getDescription();?> </p>
                     <h3 class="card-text"><?php echo $product->getPrice();?></h3>
                     <h4 class="card-text"><?php echo $product->get();?></h4>
+                    
 
                 </div>
 

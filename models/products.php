@@ -1,4 +1,9 @@
 <?php
+
+
+    include __DIR__ . './category.php';
+
+
         class products {
 
             private $title;
@@ -6,13 +11,15 @@
             private $description;
             private $price;
 
+            private $category;
 
-            public function __construct($title, $type, $description, $price ){
+            public function __construct($title, $type, $description, $price, $category){
                 
                 $this -> setTitle($title);
                 $this -> setType($type);
                 $this -> setDescription($description);
                 $this -> setPrice($price);
+                $this -> setCategory($category);
             }
             
 
@@ -63,6 +70,16 @@
             }
 
 
+
+
+            public function getCategory() {
+
+                return $this -> category;
+            }
+            public function setCategory($category) {
+
+                $this -> category = $category;
+            }
 
 
 

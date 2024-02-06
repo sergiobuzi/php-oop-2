@@ -7,12 +7,9 @@ class food extends products{
     private $weight;
 
 
-    public function __construct($title, $type, $description, $price, $weight){
+    public function __construct($title, $type, $description, $price, $category, $weight){
 
-        $this -> setTitle($title);
-        $this -> setType($type);
-        $this -> setDescription($description);
-        $this -> setPrice($price);
+        parent:: __construct($title, $type, $description, $price, $category);
         $this -> setWeight($weight);
     }
 

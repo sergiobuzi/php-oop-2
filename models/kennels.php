@@ -7,12 +7,9 @@ class kennels extends products{
     private $dimension;
 
 
-    public function __construct($title, $type, $description, $price, $dimension){
+    public function __construct($title, $type, $description, $price, $category, $dimension){
 
-        $this -> setTitle($title);
-        $this -> setType($type);
-        $this -> setDescription($description);
-        $this -> setPrice($price);
+        parent:: __construct($title, $type, $description, $price, $category);
         $this -> setDimension($dimension);
     }
 
