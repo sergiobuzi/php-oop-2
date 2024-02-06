@@ -1,6 +1,5 @@
 <?php
 
-include __DIR__ . 'models/products.php';
 
 class games extends products{
     

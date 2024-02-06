@@ -20,6 +20,5 @@
 
 
     $array_prod = [$prod1,$prod2,$prod3,$prod4,$prod5];
-    var_dump($array_prod);
 
     ?>

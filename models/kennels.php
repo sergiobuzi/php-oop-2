@@ -1,7 +1,5 @@
 <?php
 
-include __DIR__ . 'models/products.php';
-
 class kennels extends products{
     
     private $dimension;
